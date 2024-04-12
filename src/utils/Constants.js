@@ -4,6 +4,9 @@ export const NETFLIX_BACKGROUND =
   "https://assets.nflxext.com/ffe/siteui/vlv3/7ca5b7c7-20aa-42a8-a278-f801b0d65fa1/fb548c0a-8582-43c5-9fba-cd98bf27452f/IN-en-20240326-popsignuptwoweeks-perspective_alpha_website_medium.jpg";
 export const USER_ICON =
   "https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg";
+
+export const MOVIE_DETAILS = "https://api.themoviedb.org/3/movie/{MOVIE_ID}";
+
 export const API_OPTIONS = {
   method: "GET",
   headers: {
@@ -12,6 +15,10 @@ export const API_OPTIONS = {
   },
 };
 export const POSTER_CDN = "https://image.tmdb.org/t/p/w400/";
+export const ORIGINAL_POSTER = "https://image.tmdb.org/t/p/original";
+export const TRAILER_API =
+  "https://api.themoviedb.org/3/movie/{movieId}/videos";
+
 export const supported_Language = [
   { identifier: "en", name: "English" },
   { identifier: "hindi", name: "Hindi" },

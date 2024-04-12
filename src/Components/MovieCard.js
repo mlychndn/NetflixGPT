@@ -1,12 +1,13 @@
 import { POSTER_CDN } from "../utils/Constants";
 
-const MovieCard=({poster})=>{
+const MovieCard = ({ poster, movieId }) => {
+  if (!poster) return null;
 
-    if(!poster) return null;
-     
-    return (<div className=" w-36 mr-2">
-    <img className=" hover:-mt-2" alt="MoviePoster" src={ POSTER_CDN+poster}/>
-    </div>)
+  return (
+    <div className=" w-36 mr-2 hover:scale-150 transform transition-all duration-700">
+      <img alt="MoviePoster" src={POSTER_CDN + poster} />
+    </div>
+  );
 };
 
 export default MovieCard;
