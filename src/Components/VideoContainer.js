@@ -9,7 +9,7 @@ const VideoContainer = ({ movieId }) => {
   //  console.log(trailer);
   return (
     <div className=" ">
-      <PlayVideo trailerKey={trailer.key} />
+      <PlayVideo trailerKey={trailer.key} mute="true" />
     </div>
   );
 };

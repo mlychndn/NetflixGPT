@@ -7,6 +7,7 @@ import {
 } from "../utils/Constants";
 import PlayButton from "./PlayButton";
 import PlayVideo from "./PlayVideo";
+import Header from "./Header";
 
 const MovieDetails = () => {
   let { movie_id } = useParams();
@@ -31,6 +32,7 @@ const MovieDetails = () => {
 
   return (
     <>
+      <Header movieId={movie_id} />
       {!trailerKey ? (
         <div className="relative">
           <img
